@@ -1,0 +1,41 @@
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+
+// Font sizes
+$font-size-p: 16px;
+$font-size-h2: 60px;
+$font-size-h3: 48px;
+$font-size-h4: 32px;
+$font-size-h5: 24px;
+
+// Headings
+.h2,
+h2 {
+  font-family: $font-primary;
+  font-size: $font-size-h2;
+}
+
+.h3,
+h3 {
+  font-family: $font-secondary;
+  font-size: $font-size-h3;
+}
+
+.h4,
+h4 {
+  font-family: $font-secondary;
+  font-size: $font-size-h4;
+}
+
+.h5,
+h5 {
+  font-family: $font-secondary;
+  font-size: $font-size-h5;
+}
+
+/* Parágrafos */
+.p,
+p {
+  font-family: $font-primary;
+  font-size: $font-size-p;
+}
