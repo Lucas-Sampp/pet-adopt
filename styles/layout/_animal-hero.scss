@@ -1,11 +1,15 @@
 @use '../base/typography';
+@use '../base/colors';
 
 .hero-section {
-    border: 2px solid black;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    background-color: colors.$color-background-hero;
+
     .animal-highlight {
-        height: 30vh;
-        border: 2px solid black;
+        height: 40vh;
         padding: 15px;
         display: flex;
         align-items: center;
@@ -14,8 +18,7 @@
     }
 
     .animal-info {
-        border: 2px solid black;
-        height: 50%;
+        height: 70%;
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -24,6 +27,40 @@
         p {
             @extend .p;
             font-size: 24px;
+        }
+    }
+
+    .animal-image {
+
+        width: 30%;
+        height: 90%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .animal-gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        margin: auto 10px;
+
+        .animal-btn {
+            width: 130px;
+            height: 130px;
+            overflow: hidden;
+            border-radius: 50%;
+            border-color: none;
+            padding: 0px;
+            border: 0px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }

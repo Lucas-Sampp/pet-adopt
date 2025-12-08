@@ -16,6 +16,7 @@ header .header-content {
 h2 {
   font-family: "Inter", sans-serif;
   font-size: 60px;
+  color: #F97415;
 }
 
 .h3,
@@ -44,19 +45,21 @@ p {
 }
 
 .hero-section {
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  background-color: #FFFFFF;
 }
 .hero-section .animal-highlight {
-  height: 30vh;
-  border: 2px solid black;
+  height: 40vh;
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .hero-section .animal-info {
-  border: 2px solid black;
-  height: 50%;
+  height: 70%;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -64,6 +67,37 @@ p {
 }
 .hero-section .animal-info p {
   font-size: 24px;
+}
+.hero-section .animal-image {
+  width: 30%;
+  height: 90%;
+}
+.hero-section .animal-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-section .animal-gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  margin: auto 10px;
+}
+.hero-section .animal-gallery .animal-btn {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  border-color: none;
+  padding: 0px;
+  border: 0px;
+}
+.hero-section .animal-gallery .animal-btn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 * {
