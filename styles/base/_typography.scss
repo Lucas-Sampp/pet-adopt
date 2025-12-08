@@ -18,18 +18,23 @@ h2 {
   font-family: $font-primary;
   font-size: $font-size-h2;
   color: colors.$color-text-animal;
+  font-weight: 700;
 }
 
 .h3,
 h3 {
   font-family: $font-secondary;
   font-size: $font-size-h3;
+  color: colors.$color-text-default;
+  font-weight: 700;
 }
 
 .h4,
 h4 {
   font-family: $font-secondary;
   font-size: $font-size-h4;
+  color: colors.$color-text-default;
+  font-weight: 700;
 }
 
 .h5,

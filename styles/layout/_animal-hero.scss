@@ -5,40 +5,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
+    justify-content: space-between;
+    height: 75vh;
     background-color: colors.$color-background-hero;
 
     .animal-highlight {
-        height: 40vh;
+        height: 55vh;
         padding: 15px;
+        padding: 100px auto;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
-    }
+        .animal-info {
+            height: 50%;
+            width: 50%;
+            padding: 3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
 
-    .animal-info {
-        height: 70%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-        p {
-            @extend .p;
-            font-size: 24px;
+            p {
+                @extend .p;
+                font-size: 24px;
+            }
         }
-    }
 
-    .animal-image {
-
-        width: 30%;
-        height: 90%;
-
-        img {
-            width: 100%;
+        .animal-image {
+            width: 50%;
             height: 100%;
-            object-fit: cover;
+
+            img {
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 
