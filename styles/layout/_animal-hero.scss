@@ -1,0 +1,29 @@
+@use '../base/typography';
+
+.hero-section {
+    border: 2px solid black;
+    
+    .animal-highlight {
+        height: 30vh;
+        border: 2px solid black;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .animal-info {
+        border: 2px solid black;
+        height: 50%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        p {
+            @extend .p;
+            font-size: 24px;
+        }
+    }
+}
