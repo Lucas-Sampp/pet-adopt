@@ -43,7 +43,7 @@ h5 {
 }
 
 /* Parágrafos */
-.p, .form-section .form-info p, .hero-section .animal-highlight .animal-info p,
+.p, .form-section .form-info p,
 p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -58,7 +58,7 @@ p {
   background-color: #FFFFFF;
 }
 .hero-section .animal-highlight {
-  height: 55vh;
+  height: 70%;
   padding: 15px;
   padding: 100px auto;
   display: flex;
@@ -109,6 +109,63 @@ p {
      object-fit: cover;
 }
 
+@media (max-width: 428px) {
+  .hero-section {
+    height: 110vh;
+  }
+  .hero-section .animal-highlight {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+  }
+  .hero-section .animal-highlight .animal-image {
+    width: 100%;
+    height: auto;
+  }
+  .hero-section .animal-highlight .animal-image img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero-section .animal-highlight .animal-info {
+    width: 100%;
+    height: 30%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .hero-section .animal-highlight .animal-info p {
+    font-size: 16px;
+  }
+  .hero-section .animal-highlight .animal-info h2 {
+    font-size: 40px;
+  }
+  .hero-section .animal-gallery {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    padding: auto auto;
+    background-color: #2C2E96;
+  }
+  .hero-section .animal-gallery .animal-btn {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 90%;
+  }
+  .hero-section .animal-gallery .animal-btn img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .form-section {
   display: flex;
   flex-direction: column;
