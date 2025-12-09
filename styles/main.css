@@ -43,11 +43,7 @@ h5 {
 }
 
 /* Parágrafos */
-<<<<<<< HEAD
-.p, .form-section .form-info p,
-=======
-.p, footer p, .form-section .form-info p, .hero-section .animal-highlight .animal-info p,
->>>>>>> d451616b01985914a266f262fa06d1db4a22b8ad
+.p, footer p, .form-section .form-info p,
 p {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -215,6 +211,22 @@ p {
   display: flex;
   gap: 12px;
 }
+.form-section .form-btn {
+  display: flex;
+  justify-content: center;
+}
+.form-section .form-btn button {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 700;
+  background: #F97415;
+  border-radius: 8px;
+  padding: 16px 18px;
+  border: none;
+}
+
 @media (max-width: 428px) {
   .form-section {
     height: 110vh;
@@ -262,9 +274,6 @@ p {
     width: 55%;
   }
 }
-<<<<<<< HEAD
-=======
-
 footer {
   display: flex;
   flex-direction: column;
@@ -298,7 +307,6 @@ footer .footer-credit {
   border-top: 1px solid #4B5563;
 }
 
->>>>>>> d451616b01985914a266f262fa06d1db4a22b8ad
 * {
   margin: 0;
   padding: 0;

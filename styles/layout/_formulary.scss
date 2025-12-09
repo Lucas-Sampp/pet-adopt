@@ -60,7 +60,21 @@
         }
     }
 
-    .form-btn {}
+    .form-btn {
+        display: flex;
+        justify-content: center;
+        button {
+            font-family: typography.$font-secondary;
+            font-size: typography.$font-size-h4;
+            color: colors.$color-text-default;
+            font-size: 32px;
+            font-weight: 700;
+            background: colors.$btn-primary-color;
+            border-radius: 8px;
+            padding: 16px 18px;
+            border: none;
+        }
+    }
 }
 
 
@@ -71,6 +85,7 @@
 
         .form-info {
             height: 15%;
+
             p {
                 display: none;
             }
