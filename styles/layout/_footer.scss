@@ -1,0 +1,68 @@
+@use '../base/colors';
+@use '../base/typography';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 12vh;
+    padding-top: 5px;
+    background-color: colors.$color-primary;
+
+    p {
+        @extend .p;
+        color: colors.$color-text-footer;
+        font-family: typography.$font-secondary;
+    }
+
+    .footer-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+
+        .social-media {
+            display: flex;
+            justify-content: space-between;
+            width: 80px;
+        }
+    }
+
+    .footer-credit {
+        text-align: center;
+        width: 100%;
+        height: 20%;
+        padding-top: 10px;
+        border-top: 1px solid #4B5563;
+    }
+}
+
+@media (max-width: 428px) {
+    footer {
+        height: 20vh;
+
+        .footer-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            height: 50%;
+
+            p {
+                display: none;
+            }
+
+            .social-media {
+                display: flex;
+                justify-content: space-between;
+                width: 80px;
+            }
+        }
+
+        .footer-credit {
+            height: 30%;
+
+        }
+    }
+}

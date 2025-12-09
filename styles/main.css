@@ -1,3 +1,334 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  background-color: #1F2937;
+}
+header .header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.h2,
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  color: #F97415;
+  font-weight: 700;
+}
+
+.h3,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.h4, .form-section .form-field label,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.h5,
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+
+/* Parágrafos */
+.p, footer p, .form-section .form-info p,
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 75vh;
+  background-color: #FFFFFF;
+}
+.hero-section .animal-highlight {
+  height: 70%;
+  padding: 15px;
+  padding: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hero-section .animal-highlight .animal-info {
+  height: 50%;
+  width: 50%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-section .animal-highlight .animal-info p {
+  font-size: 24px;
+}
+.hero-section .animal-highlight .animal-image {
+  width: 50%;
+  height: 100%;
+}
+.hero-section .animal-highlight .animal-image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-section .animal-gallery {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  margin: auto 10px;
+}
+.hero-section .animal-gallery .animal-btn {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  border-color: none;
+  padding: 0px;
+  border: 0px;
+}
+.hero-section .animal-gallery .animal-btn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 428px) {
+  .hero-section {
+    height: 110vh;
+  }
+  .hero-section .animal-highlight {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+  }
+  .hero-section .animal-highlight .animal-image {
+    width: 100%;
+    height: auto;
+  }
+  .hero-section .animal-highlight .animal-image img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero-section .animal-highlight .animal-info {
+    width: 100%;
+    height: 30%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .hero-section .animal-highlight .animal-info p {
+    font-size: 16px;
+  }
+  .hero-section .animal-highlight .animal-info h2 {
+    font-size: 40px;
+  }
+  .hero-section .animal-gallery {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    padding: auto auto;
+    background-color: #2C2E96;
+  }
+  .hero-section .animal-gallery .animal-btn {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 90%;
+  }
+  .hero-section .animal-gallery .animal-btn img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70vh;
+  background-color: #F59F0A;
+  color: #FFFFFF;
+}
+.form-section .form-info {
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form-section .form-info p {
+  font-size: 32px;
+  width: 60%;
+  text-align: center;
+  font-weight: 500;
+}
+.form-section .form-adoption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+.form-section .form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-section .form-field input {
+  border-radius: 8px;
+  padding: 12px 16px;
+  border: none;
+}
+.form-section #animal-type-field {
+  display: flex;
+  align-items: start;
+}
+.form-section #animal-type-field .options-row {
+  display: flex;
+  gap: 12px;
+}
+.form-section .form-btn {
+  display: flex;
+  justify-content: center;
+}
+.form-section .form-btn button {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 700;
+  background: #F97415;
+  border-radius: 8px;
+  padding: 16px 18px;
+  border: none;
+}
+
+@media (max-width: 428px) {
+  .form-section {
+    height: 110vh;
+    justify-content: space-evenly;
+  }
+  .form-section .form-info {
+    height: 15%;
+  }
+  .form-section .form-info p {
+    display: none;
+  }
+  .form-section .form-info h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .form-section .form-adoption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+    width: 80%;
+  }
+  .form-section .form-adoption label {
+    font-size: 32px;
+  }
+  .form-section .form-adoption input {
+    font-size: 16px;
+  }
+  .form-section .form-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+  }
+  .form-section .form-btn button {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    background: #F97415;
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: none;
+    width: 55%;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 12vh;
+  padding-top: 5px;
+  background-color: #1F2937;
+}
+footer p {
+  color: #9CA3AF;
+  font-family: "Poppins", sans-serif;
+}
+footer .footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+footer .footer-info .social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+footer .footer-credit {
+  text-align: center;
+  width: 100%;
+  height: 20%;
+  padding-top: 10px;
+  border-top: 1px solid #4B5563;
+}
+
+@media (max-width: 428px) {
+  footer {
+    height: 20vh;
+  }
+  footer .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 50%;
+  }
+  footer .footer-info p {
+    display: none;
+  }
+  footer .footer-info .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+  }
+  footer .footer-credit {
+    height: 30%;
+  }
+}
 * {
   margin: 0;
   padding: 0;

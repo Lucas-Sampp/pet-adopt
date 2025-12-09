@@ -1,0 +1,135 @@
+@use '../base/colors';
+@use '../base/typography';
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70vh;
+    background-color: colors.$color-background-form;
+    color: colors.$color-text-default;
+
+    .form-info {
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        p {
+            @extend .p;
+            font-size: 32px;
+            width: 60%;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+
+    .form-adoption {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70%;
+
+    }
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            @extend .h4;
+        }
+
+        input {
+            border-radius: 8px;
+            padding: 12px 16px;
+            border: none;
+        }
+
+    }
+
+    #animal-type-field {
+        display: flex;
+        align-items: start;
+
+        .options-row {
+            display: flex;
+            gap: 12px;
+        }
+    }
+
+    .form-btn {
+        display: flex;
+        justify-content: center;
+        button {
+            font-family: typography.$font-secondary;
+            font-size: typography.$font-size-h4;
+            color: colors.$color-text-default;
+            font-size: 32px;
+            font-weight: 700;
+            background: colors.$btn-primary-color;
+            border-radius: 8px;
+            padding: 16px 18px;
+            border: none;
+        }
+    }
+}
+
+
+@media (max-width: 428px) {
+    .form-section {
+        height: 110vh;
+        justify-content: space-evenly;
+
+        .form-info {
+            height: 15%;
+
+            p {
+                display: none;
+            }
+
+            h3 {
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+
+        .form-adoption {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 75%;
+            width: 80%;
+
+            label {
+                font-size: 32px;
+            }
+
+            input {
+                font-size: 16px;
+            }
+        }
+
+        .form-btn {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 10%;
+
+            button {
+                font-family: typography.$font-secondary;
+                font-size: typography.$font-size-h4;
+                color: colors.$color-text-default;
+                font-size: 16px;
+                font-weight: 700;
+                background: colors.$btn-primary-color;
+                border-radius: 8px;
+                padding: 12px 16px;
+                border: none;
+                width: 55%;
+            }
+        }
+    }
+}
