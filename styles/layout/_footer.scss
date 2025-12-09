@@ -25,7 +25,6 @@ footer {
         .social-media {
             display: flex;
             justify-content: space-between;
-            border: 1px solid blue;
             width: 80px;
         }
     }
@@ -39,4 +38,31 @@ footer {
     }
 }
 
+@media (max-width: 428px) {
+    footer {
+        height: 20vh;
 
+        .footer-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            height: 50%;
+
+            p {
+                display: none;
+            }
+
+            .social-media {
+                display: flex;
+                justify-content: space-between;
+                width: 80px;
+            }
+        }
+
+        .footer-credit {
+            height: 30%;
+
+        }
+    }
+}

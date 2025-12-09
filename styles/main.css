@@ -296,7 +296,6 @@ footer .footer-info {
 footer .footer-info .social-media {
   display: flex;
   justify-content: space-between;
-  border: 1px solid blue;
   width: 80px;
 }
 footer .footer-credit {
@@ -307,6 +306,29 @@ footer .footer-credit {
   border-top: 1px solid #4B5563;
 }
 
+@media (max-width: 428px) {
+  footer {
+    height: 20vh;
+  }
+  footer .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 50%;
+  }
+  footer .footer-info p {
+    display: none;
+  }
+  footer .footer-info .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+  }
+  footer .footer-credit {
+    height: 30%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
