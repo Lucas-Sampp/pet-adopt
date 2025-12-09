@@ -64,17 +64,19 @@
                 <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
             </div>
 
-            <div class="form-field">
+            <div class="form-field" id="animal-type-field">
                 <h4>Qual animal voce quer adotar?</h4>
-                <label>
-                    <input type="radio" name="animal" value="cachorro">
-                    Cachorro
-                </label>
+                <div class="options-row">
+                    <label>
+                        <input type="radio" name="animal" value="cachorro">
+                        Cachorro
+                    </label>
 
-                <label>
-                    <input type="radio" name="animal" value="gato">
-                    Gato
-                </label>
+                    <label>
+                        <input type="radio" name="animal" value="gato">
+                        Gato
+                    </label>
+                </div>
             </div>
 
             <div class="form-field">
@@ -91,14 +93,30 @@
                 </datalist>
             </div>
 
-            <button class="form-btn">Comece Sua Jornada</button>
+            <div class="form-btn">
+                <button>Comece Sua Jornada</button>
+            </div>
+
         </form>
     </section>
-    
+
     <footer>
+        <div class="footer-info">
+            <img src="assets/icons/Logo.png" alt="imagem logo">
 
+            <p>Nossa missão é conectar pets abandonados com famílias amorosas, transformando vidas através do amor incondicional.</p>
 
+            <div class="social-media">
+                <img src="./assets/icons/facebook.png" alt="ícone facebook">
+                <img src="./assets/icons/instagram.png" alt="ícone instagram">
+            </div>
+        </div>
+
+        <div class="footer-credit">
+            <p>© 2025 PetAdopt. Desenvolvido com ❤️ para ajudar nossos amigos peludinhos.</p>
+        </div>
     </footer>
+
 </body>
 
 </html>
