@@ -47,13 +47,74 @@
             padding: 12px 16px;
             border: none;
         }
+
     }
 
-    .form-btn {
-        @extend .h4;
-        background: colors.$btn-primary-color;
-        border-radius: 8px;
-        padding: 12px 16px;
-        border: none;
+    #animal-type-field {
+        display: flex;
+        align-items: start;
+
+        .options-row {
+            display: flex;
+            gap: 12px;
+        }
+    }
+
+    .form-btn {}
+}
+
+
+@media (max-width: 428px) {
+    .form-section {
+        height: 110vh;
+        justify-content: space-evenly;
+
+        .form-info {
+            height: 15%;
+            p {
+                display: none;
+            }
+
+            h3 {
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+
+        .form-adoption {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 75%;
+            width: 80%;
+
+            label {
+                font-size: 32px;
+            }
+
+            input {
+                font-size: 16px;
+            }
+        }
+
+        .form-btn {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 10%;
+
+            button {
+                font-family: typography.$font-secondary;
+                font-size: typography.$font-size-h4;
+                color: colors.$color-text-default;
+                font-size: 16px;
+                font-weight: 700;
+                background: colors.$btn-primary-color;
+                border-radius: 8px;
+                padding: 12px 16px;
+                border: none;
+                width: 55%;
+            }
+        }
     }
 }
